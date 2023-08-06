@@ -1,0 +1,10 @@
+version: 3
+
+services:
+  rabbit:
+    image: lucifer8591/rabbitmq-server:3.7.17
+    container_name: rabbit
+    hostname: rabbit
+    ports:
+      - "5672:5672"
+      - "15672:15672"
